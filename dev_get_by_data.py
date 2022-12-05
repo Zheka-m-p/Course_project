@@ -67,9 +67,6 @@ def main():
     flag = True
     while flag:
         selected_date, selected_ticker, selected_file_name = requests_data_to_be_sorted_by_date()
-        print(selected_date, ' - это наша дата для выборки')
-        print(selected_ticker, ' - это наш тикер для выборки')
-        print(selected_file_name, ' - это наш дата для записи выборки')
         print(len(selected_date), len(selected_ticker), len(selected_file_name))
         get_by_data(date=selected_date, name=selected_ticker, filename=selected_file_name)
         print()
