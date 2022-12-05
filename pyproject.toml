@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "course-project"
+version = "0.1.0"
+description = ""
+authors = ["Zheka-m-p <chernik.dota@mail.ru>"]
+readme = "README.md"
+packages = [{include = "course_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.scripts]
+get-banch = 'dev_get_by_data:main'
+get-sorted = 'dev_sorted:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
